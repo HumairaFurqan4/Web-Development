@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get in Touch</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="form-wrapper">
+    <h2>Send Us a Message</h2>
+    <form method="post" action="submit.php" onsubmit="return checkForm()">
+      <label>Your Name:</label>
+      <input type="text" name="full_name" id="full_name">
+
+      <label>Email Address:</label>
+      <input type="text" name="email_addr" id="email_addr">
+
+      <label>Message:</label>
+      <textarea name="user_message" id="user_message"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script>
+    function checkForm() {
+      let name = document.getElementById('full_name').value;
+      let email = document.getElementById('email_addr').value;
+      let msg = document.getElementById('user_message').value;
+
+      if (name === "" || email === "" || msg === "") {
+        alert("All fields are required!");
+        return false;
+      }
+      if (!email.includes("@")) {
+        alert("Please enter a valid email!");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>

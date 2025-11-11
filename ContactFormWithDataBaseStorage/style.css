@@ -1,0 +1,37 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #e8f0fe;
+}
+
+.form-wrapper {
+  width: 450px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #222;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px 0;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+input[type=submit] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #218838;
+}
